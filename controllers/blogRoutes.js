@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Comment, Blogpost, User  } = require('../models');
+const { Comment, Blogpost, User  } = require('./models');
 const withAuth = require('../utils/auth')
 const dayjs = require('dayjs')
 
