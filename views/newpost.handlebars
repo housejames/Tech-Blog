@@ -1,0 +1,30 @@
+<div class="container">
+      <div class="row">
+        <div class="col-6" id="blog-post-card">
+          <p>New Blog Post!</p>
+        </div>
+        <div class="col-6" id="blog-post-card-post">
+          <p></p>
+        </div>
+        <form class="col-12 blog-post-form" id="sign-up-card">
+          <div class="pb-3" style="padding-left: 0; padding-right: 0">
+            <label for="titleInput" class="form-label text-white mt-3 mx-3">Title</label>
+            <input type="text" class="form-control mx-3" style="width:97%" id="titleInput"
+              placeholder="Tech blog is cool!">
+          </div>
+          <label for="blogcontent" class="form-label text-white mx-3">Content</label>
+          <textarea id="blogcontent" class="form-control mx-3 mb-3" style="width:97%"
+            aria-describedby="passwordHelpBlock"></textarea>
+          <div id="passwordHelpBlock" class="form-text text-white mx-3 mb-4">
+    
+          </div>
+          <div class="d-flex justify-content-center">
+            <input type="submit" value="Create New Post!" class="btn" id="login-btn" type="button"></input>
+            <input type="hidden" value="{{user.id}}" id="userid"></input>
+          </div>
+        
+        </form>
+      </div>
+    </div>
+
+<script src="/js/newpost.js"></script>

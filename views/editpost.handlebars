@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6" id="blog-post-card">
+            <p>Edit Blog Post</p>
+        </div>
+        <div class="col-6" id="blog-post-card-post">
+            <p></p>
+        </div>
+        <form class="col-12 blog-post-form" id="sign-up-card">
+            <div class="pb-3" style="padding-left: 0; padding-right: 0">
+                <label for="titleInput" class="form-label text-white mt-3 mx-3">Title</label>
+                <input type="text" class="form-control mx-3" style="width:97%" id="titleInput"
+                    value="{{blogEdit.title}}">
+            </div>
+            <label for="blogcontent" class="form-label text-white mx-3">Content</label>
+            <textarea id="blogcontent" class="form-control mx-3 mb-3" style="width:97%">{{blogEdit.content}}</textarea>
+
+            <div class="d-flex justify-content-center">
+                <button value="Update" class="btn" id="update-btn">Update</button>
+                <input type="hidden" value="{{blogEdit.id}}" id="blog-post-id">
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script src="/js/editpostsubmit.js"></script>

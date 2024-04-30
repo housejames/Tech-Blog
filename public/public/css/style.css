@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Ysabeau", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    background-color: #222f3e
+}
+
+.nav {
+    background-color: #222f3e;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.nav-item a, .nav-item button {
+    color: white;
+    padding: 2rem;
+    font-size: 24px;
+    margin: 0 1rem;
+}
+
+.nav-item:hover a {
+    color: #5443b3;
+    text-shadow: #492bf3 5px 0 10px;
+}
+
+#nav-btns {
+    padding-left: 0;
+    padding-right: 2rem;
+    margin-left: 0;
+}
+
+header {
+    border-bottom: 2px solid rgb(148, 148, 148)
+}
+
+
+
+.techblog-title {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+    border-radius: 20px;
+    background-color: #5443b3;
+    color: rgb(255, 255, 255);
+    box-shadow: 0.5rem 0.5rem 0rem rgb(44, 43, 43);
+    margin: 0 0 2rem 0;
+}
+
+#hamburger-menu:active {
+    box-shadow: 0 0 0 3px white;
+}
+
+#blog-post-card {
+    border: 2px solid rgb(148, 148, 148);
+    border-right: none;
+    color: white;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    background-color: #5443b3;
+}
+
+#blog-post-card a {
+    text-decoration: none;
+    color: white
+}
+
+#blog-post-card:hover {
+    cursor:pointer;
+    background: linear-gradient(to left, #5443b3, #392896)
+}
+
+#blog-post-card p {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1rem;
+}
+
+#blog-post-card-post {
+    border: 2px solid rgb(148, 148, 148);
+    border-left: none;
+    color: white;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    background-color: #5443b3;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+
+#blog-post-card-post p {
+    margin-top: 0.4rem;
+    margin-bottom: 0;
+}
+
+#blog-post-content {
+    border: 2px solid rgb(148, 148, 148);
+    border-top: none;
+    color: rgb(255, 255, 255);
+    /* margin-bottom: 1rem; */
+    padding: 1.5rem;
+    font-size: 1.2rem;
+}
+
+#blog-post-content-comment-header {
+    color: white; 
+    padding: 0.5rem;
+    background-color: #3823ac;
+    border-left: 2px solid rgb(148, 148, 148);
+    border-right: 2px solid rgb(148, 148, 148);
+}
+
+#blog-post-content-comment {
+    border: 2px solid rgb(148, 148, 148);
+    border-top: none;
+    color: rgb(255, 255, 255);
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    padding-left: 3rem;
+}
+
+#new-post-btn {
+    margin-top: 1rem;
+    background-color: #5443b3;
+    color: white;
+}
+
+#sign-up-card {
+    border: 2px solid rgb(148, 148, 148);
+    border-top: none
+}
+
+#create-acct-btn, #login-btn, #submit-btn, #update-btn {
+    background-color: #5443b3;
+    color: white;
+    margin-bottom: 1rem;
+    width: 97%;
+    font-size: 1.2rem;
+}
+
+#sign-up-card label {
+    font-size: 1.3rem
+}
+
+#login-instead {
+    color: white;
+    font-size: 1.2rem;
+}
+
+#sign-up-instead {
+    color: white;
+    font-size: 1.2rem;
+}
+
+#edit-post-btn, #delete-post-btn {
+    margin-top: 1rem;
+    background-color: #5443b3;
+    color: white;
+    width: 20%;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}

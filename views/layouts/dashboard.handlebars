@@ -29,6 +29,7 @@
                 <input type="hidden" value="{{blogPost.id}}" id="blog-post-id"></input>
             </div>
         </form>
+        {{!-- only display below buttons if the viewer and blog post owner is the same --}}
         {{#if sameUser}}
         <div class="d-flex justify-content-center align-items-center">
             <button class="btn" id="edit-post-btn">Edit Post</button>

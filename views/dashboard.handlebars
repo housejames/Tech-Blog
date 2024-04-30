@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+
+        {{#each blogPost as |blogpost|}}
+        <div class="col-6" id="blog-post-card" data-blog-id="{{blogpost.id}}">
+            <a href="/api/blogpost/{{blogpost.id}}"><p>{{blogpost.title}}</p></a>
+        </div>
+        <div class="col-6" id="blog-post-card-post">
+            <p>posted on {{blogpost.date}}</p>
+        </div>
+        {{/each}}
+        <div class="d-grid col-2 mx-auto">
+            <button class="btn" id="new-post-btn" type="button">+ New Post</button>
+        </div>
+    </div>
+</div>
+
+<script src="/js/newpostlink.js"></script>
