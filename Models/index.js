@@ -1,23 +1,20 @@
-// models/index.js
+const User = require('./User');
+const Blogpost = require('./Blogpost');
+const Comment = require('./Comment')
 
-const Sequelize = require('sequelize');
-const env = process.env.NODE_ENV || 'development';
-const config = require(__dirname + '/../config/config.json')[env];
+Blogpost.hasMany(Comment, {
+    onDelete: "CASCADE"
+})
 
-let sequelize;
-if (config.use_env_variable) {
-  sequelize = new Sequelize(process.env[config.use_env_variable], config);
-} else {
-  sequelize = new Sequelize(config.database, config.username, config.password, config);
-}
+Comment.belongsTo(Blogpost)
 
-const db = {};
+Comment.belongsTo(User)
 
-db.Sequelize = Sequelize;
-db.sequelize = sequelize;
+Blogpost.belongsTo(User)
 
-db.User = require('./user')(sequelize, Sequelize);
-db.Post = require('./post')(sequelize, Sequelize);
-db.Comment = require('./comment')(sequelize, Sequelize);
+User.hasMany(Blogpost)
 
-module.exports = db;
+User.hasMany(Comment)
+
+
+module.exports = { User, Blogpost, Comment };
